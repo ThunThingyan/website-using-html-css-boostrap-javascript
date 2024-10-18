@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blossom Bazaar Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body{
+      background-image: url('../images/flowercare.jpg');
+      background-repeat:no-repeat;
+      width:100%;
+      height:auto;
+      background-size:cover;
+    }
+    .custom-container {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .form-section {
+      border-right: 1px solid #ccc;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-container mt-5">
+  <div class="row">
+    <div class="col-md-6 form-section">
+      <a href="flowerpickup.html" class="d-block mb-3"><i class="bi bi-arrow-left"></i> Continue Shopping</a>
+      <h4 style="margin-bottom: 20px;">Deliver Flowers To</h4>
+      <form id="cartForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Receipt's Name *</label>
+          <input type="text" class="form-control" name="username" placeholder="Username" required>
+        </div>
+        <div class="mb-3">
+          <label for="contact" class="form-label">Delivery Contact Number *</label>
+          <input type="number" class="form-control" name="mobile" placeholder="Mobile Number" required>
+        </div>
+        <div class="mb-3">
+          <label for="pincode" class="form-label">Delivery Pincode *</label>
+          <input type="number" class="form-control" name="pin" placeholder="Pin Code" required>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Delivery Address *</label>
+          <input type="text" class="form-control" id="address" placeholder="Enter address">
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Choose Date *</label>
+          <input type="date" class="form-control" name="date">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+    </div>
+    <div class="col-md-6 cart-section">
+      <h4 style="margin-bottom: 20px;">Your Cart</h4>
+      <div class="order-details mb-4">
+        <center><h5>Order Details</h5></center><br>
+        <div class="row mb-3">
+          <div class="col-2">
+            <img src="../images/flower4.jpg" alt="Product" class="img-fluid">
+          </div>
+          <div class="col-4">Pink N Preety</div>
+          <div class="col-3">⟨₹⟩1024</div>
+          <div class="col-3 quantity-controls">
+            <button class="btn"><i class="bi bi-trash"></i></button>
+            <input type="number" value="1">
+            <button class="btn"><i class="bi bi-plus"></i></button>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2">
+            <img src="../images/flower2.jpg" alt="Product" class="img-fluid">
+          </div>
+          <div class="col-4">Roses Lilly in Vase</div>
+          <div class="col-3">⟨₹⟩1689</div>
+          <div class="col-3 quantity-controls">
+            <button class="btn"><i class="bi bi-trash"></i></button>
+            <input type="number" value="2">
+            <button class="btn"><i class="bi bi-plus"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-section">
+        <h5>Total: $XX.XX</h5>
+      </div>
+      <div class="pay-btn">
+        <button class="btn btn-primary btn-lg"><i class="bi bi-lock"></i> Pay</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../Javascript/validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
